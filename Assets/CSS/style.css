@@ -1,1 +1,10 @@
 @import "overlay.css";
+
+.navbar {
+    background-color: #4D7F35;
+}
+
+.navbar-brand img {
+    margin-left: 3rem;
+    max-height: 5rem;
+}

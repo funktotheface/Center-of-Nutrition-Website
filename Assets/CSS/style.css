@@ -1,7 +1,30 @@
 @import "overlay.css";
 
+.body {
+    background-color: #4D7F35 !important;
+}
+
 .navbar {
     background-color: #4D7F35;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar .nav-link.active {
+    color: white;
+}
+
+.navbar .btn {
+    color: white;
+    border: 1px solid white;
+    margin-right: 1rem; 
+}
+
+.navbar .btn:hover {
+    background-color: white;
+    color: #4D7F35;
 }
 
 .navbar-brand img {
@@ -9,7 +32,19 @@
     max-height: 5rem;
 }
 
-.card {
-    margin-top: 5rem;
-    max-width: 50vw;
+.hero-container {
+    position: relative;
+}
+
+.hero-container img {
+    filter: brightness(30%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
 }

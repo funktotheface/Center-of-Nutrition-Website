@@ -47,7 +47,7 @@ nav .nav-link {
 }
 
 .hero-container img {
-    filter: brightness(30%);
+    filter: brightness(85%);
     max-width: 100%;
 }
 
@@ -73,8 +73,4 @@ h2 {
 .abtImg {
     border-radius: 0% 25% 0% 25%;
     max-width: 500px;
-}
-
-iframe {
-    min-height: 500px;
 }

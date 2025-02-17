@@ -6,7 +6,7 @@
         setTimeout(function () {
           document.getElementById("intro-overlay").style.display = "none";
         }, 1000);
-      }, 5000);
+      }, 3000);
       sessionStorage.setItem("introShown", "true");
     } else {
       document.getElementById("intro-overlay").style.display = "none";

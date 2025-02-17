@@ -38,11 +38,12 @@
 
 .hero-container img {
     filter: brightness(30%);
+    max-width: 100%;
 }
 
 .hero-text {
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;

@@ -1,0 +1,76 @@
+@import "overlay.css";
+
+
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: white;
+}
+
+.navbar {
+    background-color: #4D7F35;
+}
+
+nav .nav-link {
+    color: white;
+}
+
+
+.nav-link.disabled {
+    color: white;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.navbar .nav-link.active {
+    color: white;
+}
+
+.navbar .btn {
+    color: white;
+    border: 1px solid white;
+    margin-right: 1rem; 
+}
+
+.navbar .btn:hover {
+    background-color: white;
+    color: #4D7F35;
+}
+
+.navbar-brand img {
+    margin-left: 3rem;
+    max-height: 5rem;
+}
+
+.hero-container {
+    position: relative;
+}
+
+.hero-container img {
+    filter: brightness(85%);
+    min-width: 100%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;   
+}
+
+h2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.abtImg {
+    border-radius: 0% 25% 0% 25%;
+    max-width: 500px;
+}

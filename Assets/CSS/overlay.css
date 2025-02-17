@@ -86,7 +86,7 @@
 }
 
 #logoText {
-    animation: fadeIn 6s ease, textReveal 4s ease;
+    animation: fadeIn 3s ease;
 }
 
 @keyframes fadeIn {
@@ -96,13 +96,4 @@
     100% {
         opacity: 1;
     }
-}
-
-@keyframes textReveal {
-    from {
-        clip-path: inset(0 100% 0 100%);
-    }
-    to {
-        clip-path: inset(0 0 0 0);
-    }   
 }

@@ -1,15 +1,25 @@
 @import "overlay.css";
 
-.body {
-    background-color: #4D7F35 !important;
+
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: white;
 }
 
 .navbar {
     background-color: #4D7F35;
 }
 
-.nav-link {
+nav .nav-link {
     color: white;
+}
+
+
+.nav-link.disabled {
+    color: white;
+    pointer-events: none;
+    opacity: 0.5;
 }
 
 .navbar .nav-link.active {
@@ -48,4 +58,19 @@
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+}
+
+h1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;   
+}
+
+h2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.abtImg {
+    border-radius: 0% 25% 0% 25%;
+    max-width: 500px;
 }

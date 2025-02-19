@@ -3,7 +3,7 @@ from .models import Post
 # Create your views here.
 def frontpage(request):
     posts = Post.objects.all()
-    return render(request, 'blog/frontpage.html')
+    return render(request, 'blog/frontpage.html', {'Posts': posts})
 
 def about(request):
     return render(request, 'blog/about.html')

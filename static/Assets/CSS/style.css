@@ -47,8 +47,8 @@ nav .nav-link {
 }
 
 .hero-container img {
-    filter: brightness(85%);
-    min-width: 100%;
+    filter: brightness(99%);
+    width: 100%
 }
 
 .hero-text {

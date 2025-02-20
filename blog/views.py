@@ -7,3 +7,7 @@ def frontpage(request):
 
 def about(request):
     return render(request, 'blog/about.html')
+
+def post_detail(request, slug):
+    post = Post.objects.get(slug=slug)
+    return render(request, 'blog/post_detail.html', {'post': post})

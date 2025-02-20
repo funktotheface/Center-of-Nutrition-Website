@@ -3,4 +3,35 @@
 <small>Published: {{ post.date_added }}</small>
 <p><strong>{{ post.intro|safe }}</strong></p>
 <p>{{ post.body|safe }}</p>
+<hr>
+<h2 class="subtitle">Comments</h2>
+
+{% for comment in post.comments.all %}
+	<article class="media">
+		<div class="media-content">
+			<div class="content">
+				<p>
+					<strong>{{ comment.name }}</strong> <small>{{ comment.date_added|timesince }} ago</small>
+					<br>
+					{{ comment.body }}
+				</p>
+			</div>
+		</div>
+	</article>
+{% empty %}
+	<div class="notification">
+		No comments yet...
+	</div>
+{% endfor %}
+
+<hr>
+<h2 class="subtitle">Add Comment</h2/>
+<form method="POST" action=".">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="field">
+        <div class="control">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
 {% endblock %}

@@ -27,6 +27,17 @@ nav .nav-link {
     color: white;
 }
 
+.seeMoreBtn .btn {
+    background-color: #4D7F35;
+    color: white;
+    border: 1px solid #4D7F35;
+}
+
+.seeMoreBtn .btn:hover {
+    background-color: white;
+    color: #4D7F35;
+}
+
 .navbar .btn {
     color: white;
     border: 1px solid white;

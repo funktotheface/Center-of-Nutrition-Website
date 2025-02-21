@@ -1,23 +1,47 @@
 #blogPreviewCarousel {
-    transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 #blogPreviewCarousel:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-  }
-  
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
 
 .card {
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
-  
+  width: 50rem;
+  height: 25rem;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .card-body {
+  flex: 1; /* This ensures that the body takes up the available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align text/content to the top */
+  padding: 1rem; /* Add some padding if needed */
   border-radius: 10px;
 }
 
+.seeMoreBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto; /* Pushes the button to the bottom */
+  padding: 1rem 0; /* Optional: Adds padding to the button for a better look */
+}
 
+.seeMoreBtn .btn {
+  background-color: #4D7F35;
+  color: white;
+  border: 1px solid #4D7F35;
+}
 
-
+.seeMoreBtn .btn:hover {
+  background-color: white;
+  color: #4D7F35;
+}

@@ -11,4 +11,4 @@
     } else {
       document.getElementById("intro-overlay").style.display = "none";
     }
-  });
+  });  

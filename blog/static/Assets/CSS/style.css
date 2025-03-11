@@ -8,22 +8,65 @@ body {
     background-color: white;
 }
 
+.navbar {
+    padding-bottom: 0px;
+}
 
+.navContainer {
+padding: 0px;
+}
+
+.searchContainer {
+max-width: 100vw;
+}
 
 #searchBtn {
     background-color: #4D7F35;
-    color: rgb(0, 0, 0);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     border-radius: 10px 0px 0px 10px;
 }
 
 #searchBar {
     border-radius: 0px 10px 10px 0px;
+    background-color: #e6e6e6;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem; /* Adjusted padding */
+    font-size: 1.2rem; /* Adjusted font size */
+    width: 35rem; /* Adjusted width */
 }
 
 #getStartedBtn {
     background-color: #D97706;
     color: white;
     border: none;
+    padding: 1rem 2rem; /* Adjusted padding */
+    font-size: 1.2rem; /* Adjusted font size */
+}
+
+.firstNavRow {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    height: 50%;
+}
+.secondNavRow {
+    background-color: #E6E6E6;
+    margin-bottom: 0px;
+    height: 50%;
+}
+
+.secondNavRow button {
+    background-color: #E6E6E6;
+    border: none;
+    color: black; 
+    border-radius: 10px 10px 0px 0px;
+    padding: 1rem 2rem; /* Adjusted padding */
+    font-size: 1.2rem; /* Adjusted font size */
+}
+
+.secondNavRow button:hover {
+    background-color: #4D7F35;
+    color: rgb(255, 255, 255);
 }
 
 .hero-container {
